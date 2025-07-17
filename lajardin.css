@@ -16,8 +16,8 @@ body{
     margin: 0;
     padding: 0;
     height: fit-content;
-    background-color: black;
 }
+
  /* nav bar */
 .navbar {
     display: flex;
@@ -39,10 +39,11 @@ nav {
 
  /* functional hamburger menu */
 .menu-icon{
+  margin-top: 20px;
   cursor: pointer;
   position: fixed;
-  top: 20px;
-  left: 20px;
+  top: 10px;
+  left: 15px;
   z-index: 1000;
   display: flex;
   flex-direction: column;
@@ -51,8 +52,8 @@ nav {
 }
 
 .menu-icon .line {
-  width: 35px;
-  height: 3px;
+  width: 30px;
+  height: 2px;
   background-color: rgb(126, 123, 123);
   margin: 3px 0;
   transition: all 0.3s ease;
@@ -110,19 +111,21 @@ nav {
 
  /* Nav logo */
 
- .logo{
-    font-family: 'LaGraziela';
- }
-
-
 .logo {
-    width:20vw;
+    width:15vw;
     height: auto;
-    max-width: 200%;
+    max-width: 200px;
+    min-width: 100px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 50px;
+    margin-top: 100px;
+}
+
+@media(max-width: 500px){
+  .logo{
+    width: 20vw;
+  }
 }
 
  /* Nav reservation*/
@@ -152,3 +155,47 @@ nav {
 {.reservation{
     display: none;
 }}
+
+ /* homepage*/
+.background{
+   position: fixed;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+.homepage-overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color:  rgba(0, 0, 0, 0.16);
+  z-index: 0;
+}
+.homepage-content{
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding-top: 40vh;
+
+  font-family: 'ChronicleDisplayItalic';
+  color: white; 
+  font-size: 30px;;
+}
+
+.homepage-header{
+  margin-bottom: 0%;
+  margin-top: 0%;
+
+}
+.homepage-location{
+  margin-bottom: 2%;
+  margin-top: 0%;
+}
+
+.homepage-stars{
+
+width: 12%;
+}
+
