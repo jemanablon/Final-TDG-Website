@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'ChronicleDisplayItalic';
+    src: url(./fonts/Chronicle\ Display\ Light\ Italic.otf) format('truetype'); 
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'LaGraziela';
+    src: url(fonts/La\ Graziela.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: 'ChronicleDisplayItalic', serif;
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+    background-color: black;
+}
+ /* nav bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+ /* functional hamburger menu */
+.menu-icon{
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-icon .line {
+  width: 35px;
+  height: 3px;
+  background-color: rgb(126, 123, 123);
+  margin: 3px 0;
+  transition: all 0.3s ease;
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: right 0.4s ease;
+}
+
+.menu-overlay.open {
+  right: 0;
+}
+
+.close-icon {
+  display: none;
+    z-index: 1001;
+}
+.menu-overlay{
+  z-index: 900;
+}
+
+.menu-overlay.open ~ .menu-icon {
+  display: none;
+}
+
+.menu-overlay.open ~ .close-icon {
+  display: flex;
+}
+
+.menu-overlay ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.menu-overlay ul li {
+  margin: 15px 0;
+}
+
+.menu-overlay ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+ /* Nav logo */
+
+ .logo{
+    font-family: 'LaGraziela';
+ }
+
+
+.logo {
+    width:20vw;
+    height: auto;
+    max-width: 200%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px;
+}
+
+ /* Nav reservation*/
+ .reservation{
+   position: fixed;
+   z-index: 100;
+   right: 0;
+   top:0;
+ }
+
+.reservation button{
+    margin: 30px;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    background-color: transparent;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+    padding: 15px 30px;
+    position: absolute;
+    right: 0;
+}
+
+@media (max-width: 600px)
+{.reservation{
+    display: none;
+}}

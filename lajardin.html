@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+      <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="lajardin.css">
+       <title>La Jardin</title>
+</head>
+<body>
+        <header class="navbar">
+             <div class="menu-icon" onclick="toggleMenu()">
+                 <div class="line"></div>
+                 <div class="line"></div>
+                  <div class="line"></div>
+             </div>
+             <div class="close-icon" onclick="toggleMenu()">&times;</div>
+      
+             <div class="menu-overlay" id="menuOverlay">
+                 <ul>
+                     <li><a href="2.menu.html">MENU</a></li>
+                     <li><a href="3.chef.html">CHEF PROFILE</a></li>
+                     <li><a href="4.jardin-prive.html">JARDIN PRIVE</a></li>
+                     <li><a href="5.seasonal.html">SEASONAL</a></li>
+                     <li><a href="6.about.html">ABOUT</a></li>
+                 </ul>
+             </div>
+               <script>
+                 function toggleMenu() {
+                 const menu = document.getElementById('menuOverlay');
+                 menu.classList.toggle('open'); }
+             </script>
+
+             <img class="logo" src="images/logo.png">
+             <div class="reservation">
+                <button>
+                    RESERVATION
+                </button>
+             </div>
+        </header>
+</body>
