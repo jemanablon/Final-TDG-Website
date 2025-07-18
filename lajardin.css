@@ -289,3 +289,44 @@ margin-left: 88%;
     pointer-events: auto;
     color: whitesmoke
 }
+
+ /* about page*/
+
+ .about-page{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+ }
+
+ .about-background {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.menupage-overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color:  rgba(0, 0, 0, 0.099);
+  z-index: 0;
+}
+
+.about-content{
+  position: absolute;
+  padding: 20% 10%;
+
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+}
+
+
