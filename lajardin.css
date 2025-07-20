@@ -38,7 +38,7 @@ nav {
   z-index: 1000;
 }
 
- /* functional hamburger menu */
+/* functional hamburger menu */
 .menu-icon{
   margin-top: 20px;
   cursor: pointer;
@@ -110,7 +110,7 @@ nav {
   font-size: 24px;
 }
 
- /* Nav logo */
+/* Nav logo */
 
 .logo {
     width:15vw;
@@ -129,13 +129,13 @@ nav {
   }
 }
 
- /* Nav reservation*/
- .reservation{
+/* Nav reservation*/
+.reservation{
    position: fixed;
    z-index: 100;
    right: 0;
    top:0;
- }
+}
 
 .reservation button{
     margin: 30px;
@@ -157,7 +157,7 @@ nav {
     display: none;
 }}
 
- /* homepage*/
+/* homepage*/
 .background{
     position: fixed;
     top: 0;
@@ -181,8 +181,6 @@ nav {
   text-align: center;
   padding-top: 40vh;
   height: 100vh;
-
-
   font-family: 'ChronicleDisplayItalic';
   color: white; 
   font-size: 30px;;
@@ -203,50 +201,49 @@ nav {
 width: 12%;
 }
 
- /* menu*/
+/* menu*/
 
- .menu{
+.menu{
   position: relative;
   width: 100vw;
   min-height: 100vh;
   overflow: hidden;
- }
+}
 
- .slides-container{
+.slides-container{
   display: flex;;
   width: 100vw;
   height: 100vh;
   transition: transform 0.5s ease-in-out;
- }
+}
 
- .slide{
+.slide{
 display: flex;
 width: 100vw;
 height: 100vh;
 flex-shrink: 0;
- }
+}
 
- .left-panel, .right-panel{
+.left-panel, .right-panel{
   flex: 1;
   position: relative;
   overflow: hidden;
- }
+}
 
- .left-panel img, .right-panel img{
+.left-panel img, .right-panel img{
   width: 100%;
   height: 100vh;
   object-fit: cover;
   transition: 0.5s ease;
   z-index: 1;
- }
+}
 
-   /* information button*/
+/* information button*/
 .info-button{
-position: absolute;
-transform: translate(-50%, -50%);
-left: 50%;
-top: 50%; 
-     
+  position: absolute;
+ transform: translate(-50%, -50%);
+ left: 50%;
+ top: 50%;   
 }
 
 .info-button{
@@ -262,16 +259,16 @@ cursor: pointer;
 padding: 2%;
 }
 
-  /* hover effect*/
-   .left-panel.hovered img {
-      filter: grayscale(80%);
-    }
+/* hover effect*/
+.left-panel.hovered img {
+   filter: grayscale(80%);
+}
 
-  /* control buttons*/
- .controls {
-  position: absolute;
-  top: 50%;
+/* control buttons*/
+.controls {
+  position: relative;
   width: 100%;
+  padding-bottom: 60%;
   transform: translateY(-50%);
   display: flex;
   pointer-events: none; 
@@ -290,16 +287,8 @@ margin-left: 88%;
     color: whitesmoke
 }
 
- /* about page*/
-
- .about-page{
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
- }
-
- .about-background {
+/* about page*/
+.about-background {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -328,5 +317,11 @@ margin-left: 88%;
   text-align: center;
   font-size: 25px;
 }
-
-
+.about{
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}

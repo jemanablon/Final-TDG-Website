@@ -1,7 +1,4 @@
  
- 
- 
- 
    // Menu Page
  let currentSlide = 0;
   const slider = document.getElementById('slider');
@@ -35,3 +32,4 @@
       panel.classList.remove('hovered');
     });
   });
+
