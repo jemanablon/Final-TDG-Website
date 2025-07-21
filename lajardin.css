@@ -326,3 +326,89 @@ margin-left: 88%;
   z-index: 1;
   padding: 20px;
 }
+
+/* seasonal*/
+.seasonal{
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.seasonal-background {
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.card-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  padding: 8rem 4rem;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  text-align: center;
+  color: white;
+  box-sizing: border-box;
+  padding-bottom: 2rem;
+}
+
+.card-image {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.seasonal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.inquire {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 12px 24px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.card-image:hover .seasonal-overlay,
+.card-image:hover .inquire {
+  opacity: 1;
+}
