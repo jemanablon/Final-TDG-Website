@@ -438,7 +438,6 @@ margin-left: 88%;
   font-size: 20px;
 }
 
-
 .card-image:hover .seasonal-overlay,
 .card-image:hover .inquire {
   opacity: 1;
@@ -453,3 +452,24 @@ margin-left: 88%;
   }
 }
 
+#jardinSlider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.jardin-prive{
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+}
+.jardin-text{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 25px;
+  width: 80%;
+  text-align: center;
+  z-index: 1;
+  padding: 20px;
+}

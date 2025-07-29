@@ -1,98 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Smooth Fullscreen Slider</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html, body {
-      height: 100%;
-      overflow: hidden;
-      font-family: sans-serif;
-    }
-
-    .slider {
-      position: relative;
-      width: 100vw;
-      height: 100vh;
-      overflow: hidden;
-    }
-
-    .slides-container {
-      display: flex;
-      width: 300vw; /* 3 slides, 100vw each */
-      height: 100%;
-      transition: transform 0.5s ease-in-out;
-    }
-
-    .slide {
-      flex: 0 0 100vw;
-      height: 100vh;
-      object-fit: cover;
-    }
-
-    .nav-button {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background: rgba(0, 0, 0, 0.4);
-      color: white;
-      font-size: 2rem;
-      border: none;
-      padding: 1rem;
-      cursor: pointer;
-      z-index: 10;
-    }
-
-    .prev {
-      left: 20px;
-    }
-
-    .next {
-      right: 20px;
-    }
-  </style>
-</head>
-<body>
-
-  <div class="slider">
-    <div class="slides-container" id="slides">
-      <img src="images/placeholder1.jpg" class="slide">
-      <img src="images/placeholder1.svg" class="slide">
-      <img src="images/placeholder2.png" class="slide">
+<div class="jardin-prive">
+  <div class="slides-container" id="jardinSlider">
+    <div class="slide">
+      <img src="images/fullslide1.png" style="width:100vw; height:100vh; object-fit:cover;" />
     </div>
-
-    <button class="nav-button prev" onclick="changeSlide(-1)">&#10094;</button>
-    <button class="nav-button next" onclick="changeSlide(1)">&#10095;</button>
+    <div class="slide">
+      <img src="images/fullslide2.png" style="width:100vw; height:100vh; object-fit:cover;" />
+    </div>
+    <div class="slide">
+      <img src="images/fullslide3.png" style="width:100vw; height:100vh; object-fit:cover;" />
+    </div>
   </div>
-
-  <script>
-    let currentIndex = 0;
-    const slides = document.getElementById('slides');
-    const totalSlides = slides.children.length;
-
-    function changeSlide(direction) {
-      currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
-      slides.style.transform = `translateX(-${currentIndex * 100}vw)`;
-    }
-  </script>
-
-</body>
-</html>   
- <!-- jardin prive-->  
-        <div class="jardin-prive">
-            <div class="jardin-slider" id="slides">
-                <img src="images/jardin-prive1.png"  class="slide">
-                <img src="images/jardin-prive2.png" class="slide">
-                <img src="images/jardin-prive3.png" class="slide">
-            </div>
-            <div class="jardin-button"> 
-                 <button class="jardin-prev" onclick="changeSlide(-1)">&#10232;</button>
-                 <button class="jardin-next" onclick="changeSlide(1)">&#10233;</button>
-            </div>
-        </div>
+  <div class="controls">
+    <button id="jardinPrev">&#10232;</button>
+    <button class="next" id="jardinNext">&#10233;</button>
+  </div>
+</div>
