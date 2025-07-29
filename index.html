@@ -1,17 +1,28 @@
-<div class="jardin-prive">
-  <div class="slides-container" id="jardinSlider">
-    <div class="slide">
-      <img src="images/fullslide1.png" style="width:100vw; height:100vh; object-fit:cover;" />
+<!DOCTYPE html>
+<html>
+  <head>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="chef-container">
+      <div class="chef-list">
+    <div class="chef-profile" data-chef="miguel">
+      <img src="images/miguel.png" >
     </div>
-    <div class="slide">
-      <img src="images/fullslide2.png" style="width:100vw; height:100vh; object-fit:cover;" />
+    <div class="chef-profile" data-chef="michael">
+      <img src="images/michael.png" alt="Michael ">
     </div>
-    <div class="slide">
-      <img src="images/fullslide3.png" style="width:100vw; height:100vh; object-fit:cover;" />
+    <div class="chef-profile" data-chef="luca">
+      <img src="images/luca.png">
     </div>
   </div>
-  <div class="controls">
-    <button id="jardinPrev">&#10232;</button>
-    <button class="next" id="jardinNext">&#10233;</button>
+  
+  <div class="chef-info-panel">
+    <div id="chef-info-content">
+      <p>Select a chef to view details</p>
+    </div>
   </div>
 </div>
+  </body>
+</html>

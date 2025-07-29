@@ -1,61 +1,36 @@
 
+  const chefData = {
+    miguel: `
+      <h1>MIGUEL FUENTES</h1>
+      <p>Chef Miguel Manuel Fuentes is an acclaimed Michelin-starred Spanish chef...</p>
+      <ul>
+        <li>Michelin Star recipient for Alma de Mar, Barcelona</li>
+        <li>National Gastronomy Award of Spain (2015)</li>
+        <li>Madrid Fusión</li>
+      </ul>
+    `,
+    michael: `
+      <h1>MICHAEL FUENTES</h1>
+      <p>Michael is Miguel’s brother and co-founder of Alma de Mar, with a deep focus on technique...</p>
+    `,
+    luca: `
+      <h1>LUCA ROMERO</h1>
+      <p>Chef Luca Romero brings molecular gastronomy to the forefront with his theatrical plating...</p>
+    `
+  };
 
+  const chefProfiles = document.querySelectorAll(".chef-profile");
+  const infoPanel = document.getElementById("chef-info-content");
 
+  chefProfiles.forEach(profile => {
+    profile.addEventListener("click", () => {
+      // Remove dimming from all
+      chefProfiles.forEach(p => p.classList.add("dimmed"));
+      // Highlight the selected one
+      profile.classList.remove("dimmed");
 
-       
-   document.addEventListener("DOMContentLoaded", function () {
-  // Menu Page 
-  let currentSlide = 0;
-  const slider = document.getElementById('slider');
-  const totalSlides = document.querySelectorAll('.menu .slide').length;
-
-  const nextButton = document.getElementById('next');
-  const prevButton = document.getElementById('prev');
-
-  if (nextButton && prevButton && slider) {
-    nextButton.addEventListener('click', () => {
-      if (currentSlide < totalSlides - 1) {
-        currentSlide++;
-        updateSlider();
-      }
-    });
-
-    prevButton.addEventListener('click', () => {
-      if (currentSlide > 0) {
-        currentSlide--;
-        updateSlider();
-      }
-    });
-
-    function updateSlider() {
-      slider.style.transform = `translateX(-${currentSlide * 100}%)`;
-    }
-  }
-
-  // Info Button Hover Effect 
-  document.querySelectorAll('.info-button').forEach(button => {
-    const panel = button.closest('.left-panel');
-    button.addEventListener('mouseenter', () => {
-      panel.classList.add('hovered');
-    });
-    button.addEventListener('mouseleave', () => {
-      panel.classList.remove('hovered');
+      // Inject info
+      const chefId = profile.getAttribute("data-chef");
+      infoPanel.innerHTML = chefData[chefId] || "<p>Chef info not found.</p>";
     });
   });
-
-   // Jardin Privé Slider 
-   let currentIndex = 0;
-   const jardinSlider = document.getElementById('slides');
-   const jardinSlides = jardinSlider ? jardinSlider.querySelectorAll('.slide') : [];
-   const totalJardinSlides = jardinSlides.length;
-
-
-
-
-
-      // Jardin Prive
-// Jardin Prive Slider
-let currentIndex = 0;
-const jardinSlider = document.getElementById('slides');
-const jardinSlides = jardinSlider ? jardinSlider.querySelectorAll('.slide') : [];
-const totalJardinSlides = jardinSlides.length;
