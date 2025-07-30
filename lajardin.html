@@ -20,11 +20,11 @@
       
              <div class="menu-overlay" id="menuOverlay">
                  <ul>
-                     <li><a href="2.menu.html">MENU</a></li>
-                     <li><a href="3.chef.html">CHEF PROFILE</a></li>
-                     <li><a href="4.jardin-prive.html">JARDIN PRIVE</a></li>
-                     <li><a href="5.seasonal.html">SEASONAL</a></li>
-                     <li><a href="6.about.html">ABOUT</a></li>
+                     <li><a href="#menu">MENU</a></li>
+                     <li><a href="#about">ABOUT</a></li>
+                     <li><a href="#seasonal">SEASONAL</a></li>
+                     <li><a href="#jardin">JARDIN PRIVE</a></li>
+                     <li><a href="#footer">FOOTER</a></li>
                  </ul>
              </div>
                <script>
@@ -35,9 +35,12 @@
 
              <img class="logo" src="images/logo.png">
              <div class="reservation">
-                <button>
-                    RESERVATION
-                </button>
+                <a href="onclick/reservation.html">
+                   <button>
+                      RESERVATION
+                  </button>
+                </a>
+
              </div>
         </header>
         <!-- Homepage -->
@@ -51,16 +54,16 @@
                     Weldome to La Jardin
                 </h1>
 
-                <h5 class="homepage-location">
+                <h4 class="homepage-location">
                     Auckland, New Zealand
-                </h5>
+                </h4>
 
                 <img class="homepage-stars" src="images/stars.png">
             </div>
         </div>
 
      <!-- Menu page -->
-     <div class="menu">
+     <div class="menu" id="menu">
          <div class="slides-container" id="slider">
                   <!-- Slide 1 -->
                  <div class="slide">
@@ -113,7 +116,7 @@
 
 
       <!-- about-->
-       <div class="about">
+       <div class="about" id="about">
           <div class="about-background">
               <img src="images/about-background.png">
              <div class="aboutpage-overlay"></div>
@@ -127,8 +130,9 @@
              </div>
           </div>
        </div>
+
       <!-- seasonals-->
-       <div class="seasonal">
+       <div class="seasonal" id="seasonal">
          <div class="seasonal-background">
              <img src="images/seasonal.png">
              <div class="seasonal-overlay"></div>
@@ -168,8 +172,9 @@
                  </p>
              </div> <!-- end of card container-->             
          </div><!-- end of card section-->
+
      <!-- Jardin Prive-->
-      <div class="jardin-prive">
+      <div class="jardin-prive" id="jardin">
          <div class="slides-container" id="jardinSlider">
              <div class-="slide">
                  <img src="images/jardin-prive1.png" style="width:100vw; height:100vh; object-fit:cover;" >
@@ -190,7 +195,7 @@
          </div>
       </div>
      <!-- Chef profile -->
-      <div class="chef-section">
+      <div class="chef-section" id="chef">
          <div class="chef-background">
               <img src="images/chef.png">
          </div> <!-- end of background-->
@@ -210,11 +215,13 @@
              <div id="chef-info content"></div>
          </div>
       </div> <!-- end of chef section-->
-      <div class="footer-page">
+
+
+      <div class="footer-page" id="footer">
          <div class="footer-background">
              <img src="images/footer.png">
          </div>
-          <div class="footer-content">
+          <div class="footer-content" > 
              <div>
                  <h2>FIND US</h2>
                  <h5>283 Ponsonby Road, Aukland <br> Central, Auckland 1011 New Zealand</h5>
