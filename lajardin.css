@@ -352,16 +352,17 @@ margin-left: 88%;
 }
 .seasonal-background {
   position: absolute;
-  top:0;
-  left:0;
+  width: 100vw;
+  height: 130vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+.seasonal-background img {
   width: 100%;
   height: 100%;
-  justify-content: center;
-  align-items: center;
   object-fit: cover;
-  z-index: -1;
-  pointer-events: none;
-  overflow: hidden;
 }
 .seasonal-overlay{
   position: fixed;
@@ -472,23 +473,22 @@ margin-left: 88%;
   z-index: 1;
   padding: 20px;
 }
-
 /* chef profile*/
 .chef-background{
   position: absolute;
   top:0;
-  left:0;
   width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  object-fit: cover;
+  height: 115vh;
+  top: 0;
+  left: 0;
   z-index: -1;
-  pointer-events: none;
   overflow: hidden;
 }
-
+.chef-background img{
+  width: 100%;
+  height: 100;
+    object-fit: cover;
+}
 
 .chef-overlay{
   position: absolute;
@@ -544,6 +544,7 @@ margin-left: 88%;
   padding-top: 20px;
 }
 
+
 .chef-profile.dimmed {
   filter: grayscale(100%) brightness(50%);
 }
@@ -558,6 +559,7 @@ margin-left: 88%;
   padding-top: 50px;
 }
 
+/* seasonal*/
 .footer-page{
   position: relative;
   width: 100vw;
@@ -567,19 +569,43 @@ margin-left: 88%;
   flex-direction: column;
 }
 
-.footer-background{
+.footer-background {
   position: absolute;
-  top:0;
-  left:0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  object-fit: cover;
+  height: 100vh;
+  height: 115vh;
+  top: 0;
+  left: 0;
   z-index: -1;
-  pointer-events: none;
   overflow: hidden;
 }
 
+.footer-background img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  color: white;
+  padding: 0 5vw;
+  box-sizing: border-box;
+}
+
+.footer-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.footer-content h5 {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 0;
+}
 
