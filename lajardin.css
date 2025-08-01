@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'ChronicleDisplayItalic';
-    src: url(./fonts/Chronicle\ Display\ Light\ Italic.otf) format('truetype'); 
+    font-family: 'Chronicle';
+    src: url(./fonts/Chronicle.otf) format('truetype'); 
     font-weight: normal;
     font-style: italic;
 }
@@ -9,8 +9,11 @@
     src: url(./fonts/Italiana.ttf) format('truetype'); 
     font-weight: lighter;
 }
-
-
+@font-face {
+    font-family: 'adelia';
+    src: url(./fonts/adelia.otf) format('truetype'); 
+    font-weight: lighter;
+}
 html{
   scroll-behavior: smooth;
 }
@@ -177,7 +180,7 @@ nav {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color:  rgba(0, 0, 0, 0.159);
+  background-color:  rgba(0, 0, 0, 0.049);
   z-index: 0;
 }
 
@@ -198,10 +201,10 @@ nav {
 }
 
 .homepage-location{
-  font-size: 25px;
+  font-size: 19px;
   margin-bottom: 1%;
   margin-top: 0%;
-  font-style: italic;
+  font-family: 'adelia';
 }
 
 .homepage-stars{
@@ -309,13 +312,16 @@ margin-bottom: 5%;
 }
 .about-background {
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100vw;
   height: 100vh;
   object-fit: cover;
   z-index: -1;
+}
+
+.about-background img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .aboutpage-overlay{
@@ -324,8 +330,8 @@ margin-bottom: 5%;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color:  rgba(0, 0, 0, 0.099);
-  z-index: 0;
+  background-color:  rgba(0, 0, 0, 0.233);
+  z-index: -1 ;
 }
 
 .about-content {
@@ -333,14 +339,19 @@ margin-bottom: 5%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: rgba(255, 255, 255, 0.933);
   font-size: 25px;
   width: 80%;
   text-align: center;
   z-index: 1;
   padding: 20px;
+  font-family: 'Chronicle';
 }
 
+.slogan{
+  font-family: 'adelia';
+  font-size: 2rem;
+}
 /* seasonal*/
 .seasonal{
   position: relative;
@@ -433,9 +444,11 @@ margin-bottom: 5%;
 }
 .seasonal-heading{
   font-size: 25px;
+  font-family: 'Italiana';
 }
 .seasonal-desciption{
-  font-size: 20px;
+  font-size: 23px;
+  font-family: 'Chronicle';
 }
 
 .card-image:hover .seasonal-overlay,
@@ -452,18 +465,41 @@ margin-bottom: 5%;
   }
 }
 
-#jardinSlider {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
 .jardin-prive{
   position: relative;
   width: 100vw;
   min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
-.jardin-text{
+.jardin-background {
   position: absolute;
-  top: 50%;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.jardin-background img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.jardin-overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color:  rgba(0, 0, 0, 0.257);
+  z-index: 1;
+}
+
+.jardin-content {
+  position: absolute;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -472,7 +508,26 @@ margin-bottom: 5%;
   text-align: center;
   z-index: 1;
   padding: 20px;
+  font-family: 'Chronicle';
 }
+
+.jardin-reservation{
+  padding-top: 5%;
+}
+
+
+.jardin-reservation button{
+  padding: 12px 24px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 4px;    
+  letter-spacing: 0.2rem;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 /* chef profile*/
 .chef-background{
   position: absolute;
@@ -544,7 +599,6 @@ margin-bottom: 5%;
   padding-top: 20px;
 }
 
-
 .chef-profile.dimmed {
   filter: grayscale(100%) brightness(50%);
 }
@@ -556,7 +610,14 @@ margin-bottom: 5%;
   text-align: center;
   width: 100%;
   max-width: 1230px;
-  padding-top: 50px;
+  padding-top: 45px;
+}
+.chef-name{
+  font-size: 70px;
+  font-family: "Italiana"
+}
+.chef-description{
+  font-family: "Chronicle";
 }
 
 /* seasonal*/
