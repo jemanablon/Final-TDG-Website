@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jardin Prive</title>
+  <link rel="stylesheet" href="onlick-css/jardin-prive.css">
+</head>
+<body>
+<div>
+ <div class="slides-container"> 
+  <div class="slider" id="slider">
+    <div class="slide active" style="background-image: url('onclick-images/jardin2.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
+    <div class="slide" style="background-image: url('onclick-images/jardin3.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
+    <div class="slide" style="background-image: url('onclick-images/jardin.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
+    
+    <button class="prev" id="prev">&#8636;</button>
+    <button class="next" id="next">&#8640;</button>
+  </div>
+  <div class="booking-form">
+        <h2> Jardin Prive Inquire</h2>
+            <form class= "form-content" action="">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required>
+
+               <label for="name">Email:</label>
+                <input type="email'" name="email" id="email" required>
+
+             <label for="intended-date">Intended Date:</label>
+             <input type="date" name="intended-date" id="intended-date" required>
+
+               <label for="name">Request : Room, Chef & Amount of guests:</label>
+               <input type="reservation" name="reservation" id="reservation" required>
+
+                <button type="submit">RESERVE NOW</button>
+            </form>
+    </div>
+ </div>
+
+  <script src="onclick-java/jardin-prive.js"></script>
+</body>
+</html>
