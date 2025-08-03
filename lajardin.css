@@ -158,6 +158,10 @@ nav {
     right: 0;
 }
 
+.reservation :hover{
+  background-color: rgba(128, 128, 128, 0.325);
+}
+
 @media (max-width: 600px)
 {.reservation{
     display: none;
@@ -174,15 +178,6 @@ nav {
     z-index: -1;
 }
 
-.homepage-overlay{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color:  rgba(0, 0, 0, 0.049);
-  z-index: 0;
-}
 
 .homepage-content{
   position: relative;
@@ -330,7 +325,7 @@ margin-bottom: 5%;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color:  rgba(0, 0, 0, 0.233);
+  background-color:  rgba(0, 0, 0, 0.129);
   z-index: -1 ;
 }
 
