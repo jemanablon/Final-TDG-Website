@@ -4,22 +4,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const menuDetails = {
     main: `
-      <h1 class="menu-name">MIGUEL FUENTES</h1>
-      <p class="menu-description"><em>Chef Miguel Manuel Fuentes</em> is an acclaimed Michelin-starred Spanish chef celebrated for his bold fusion of traditional Iberian flavors and cutting-edge modernist cuisine...<br><br>
-      • Michelin Star recipient for Alma de Mar, Barcelona<br>
-      • National Gastronomy Award of Spain (2015)<br>
-      • Named among Spain’s Top 10 Young Chefs to Watch by GastroEspaña Magazine<br>
-      • Featured speaker at premier culinary events including:<br>
-      &nbsp;&nbsp;&nbsp;– Madrid Fusión<br>
-      &nbsp;&nbsp;&nbsp;– San Sebastián Gastronomika</p>
+      <h1 class="menu-name">MAIN</h1>
+      <p class="menu-description"><em>How we encoperate Hibiscus Sabdariffa in our MAINS</em><br><br>
+      • Salads: Fresh Hibiscus petals are the star of our salads for their tart burst of flavour and striking colours.<br>
+      • Sauces & Glazes: Dried hibisus are steeped and blended into reductions and galzes for out meats such as lambs and proks as It's tartness flavour cuts through rich, fatty flavours<br>
+      • Pickling: We also use Hibiscus infused pickling liquids to add tang and beautiful ruby red dye to our vegetables <br>
+      • Spice Blends: Grounded dried hibiusus are often used as rubs for our fish and poultry, to add acidicity and floral notes<br>
     `,
     drink: `
-      <h1 class="menu-name">MICHAEL FUENTES</h1>
-      <p class="menu-description">Michael Fuentes is known for his innovation in pastry and fine desserts with foraged botanicals... (Add real content here)</p>
+      <h1 class="menu-name">BEVARAGE</h1>
+      <p class="menu-description"> How we encoperate Hibiscus Sabdariffa in our BEVERAGES</p>
+      • Agua de Jamaica: Classic, Non-Alcoholic option. Hibiscus floral tea that is served both hot and cold<br>
+      • Cocktails & Mocktails: Hibiscus infused Cocktails and Mocktails brings the addicting tartness and vivid colour to drinks <br>
+      • Fermented Drinks: Seasonaly Kombuchas abd souring agents in beer<br>
     `,
     desert: `
-      <h1 class="menu-name">LUCA MORETTI</h1>
-      <p class="menu-description">Luca Moretti brings refined northern Italian floral techniques into a modern culinary dialogue... (Add real content here)</p>
+      <h1 class="menu-name">DESSERT</h1>
+       <p class="menu-description"> How we encoperate Hibiscus Sabdariffa in our DESSERTS</p>
+      • Hibiscus Syrup:  Hybiscus syrups are drizzled over panna cottas, cheese cakes and ice creams<br>
+      • Jelly/Jam: Used as fillings that are paired beautifully with schones and pastries<br>
+      •Candied Petals: Fresh petals are crystallised and candied and are garnished<br>     
     `
   };
 

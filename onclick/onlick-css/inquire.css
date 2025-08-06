@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'Chronicle';
+    src: url(../onclick-fonts/Chronicle.otf) format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Italiana';
+    src: url(../onclick-fonts/Italiana.ttf) format('truetype');
+    font-weight: lighter;
+}
+@font-face {
+    font-family: 'adelia';
+    src: url(../onclick-fonts/adelia.otf) format('opentype');
+    font-weight: lighter;
+}
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+.form-content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    background-color: rgb(70, 64, 57);
+}
+
+.form-content h2{
+    margin-bottom: 30px;
+    font-family: 'adelia';
+    color: white;
+}
+.description{
+    font-family: 'italiana';
+    margin-bottom: 30px;
+    font-size: 23px;
+    font-weight: bold;
+    color: white;
+}
+
+.form-content  input, 
+.form-content button{
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+
+.slides-container{
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.slide.active{
+    opacity: 1;
+    z-index: 1;
+}
+
+.slider-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 5rem;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 2;
+}
+ 
+.prev-btn{
+    left: 15px;
+}
+
+.next-btn{
+    right: 3%;
+}

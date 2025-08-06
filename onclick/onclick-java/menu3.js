@@ -4,22 +4,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const menuDetails = {
     main: `
-      <h1 class="menu-name">MIGUEL FUENTES</h1>
-      <p class="menu-description"><em>Chef Miguel Manuel Fuentes</em> is an acclaimed Michelin-starred Spanish chef celebrated for his bold fusion of traditional Iberian flavors and cutting-edge modernist cuisine...<br><br>
-      • Michelin Star recipient for Alma de Mar, Barcelona<br>
-      • National Gastronomy Award of Spain (2015)<br>
-      • Named among Spain’s Top 10 Young Chefs to Watch by GastroEspaña Magazine<br>
-      • Featured speaker at premier culinary events including:<br>
-      &nbsp;&nbsp;&nbsp;– Madrid Fusión<br>
-      &nbsp;&nbsp;&nbsp;– San Sebastián Gastronomika</p>
+  <h1 class="menu-name">MAIN</h1>
+      <p class="menu-description"><em>How we encoperate Chrysanthemum Morifolium in our MAINS</em><br><br>
+      • Salads: Young Chrysanthemum leaves have a mild bitternes making them refreshing counterpoint in salads..<br>
+      • Broths & Soups: Inspired by Chinese cuisine, Crysanthemum petals and leaves are added to hot pots and miro soup for herbal and floral note<br>
+      • Pickling: Pickled Chrysanthemum assa tangy and herbal qualities <br>
     `,
     drink: `
-      <h1 class="menu-name">MICHAEL FUENTES</h1>
-      <p class="menu-description">Michael Fuentes is known for his innovation in pastry and fine desserts with foraged botanicals... (Add real content here)</p>
+      <h1 class="menu-name">BEVARAGE</h1>
+      <p class="menu-description"> How we encoperate Chrysanthemum Morifolium in our BEVERAGES</p>
+      • Ju Hua Cha: Inspired by chinese delicate tea, belnded with honey or berries and prised for its cooling and calmping properties<br>
+      • Cocktails & Mocktails: Added to cocktails and mocktails for its bitterness <br>
     `,
     desert: `
-      <h1 class="menu-name">LUCA MORETTI</h1>
-      <p class="menu-description">Luca Moretti brings refined northern Italian floral techniques into a modern culinary dialogue... (Add real content here)</p>
+      <h1 class="menu-name">DESSERT</h1>
+       <p class="menu-description"> How we encoperate Chrysanthemum Morifolium in our DESSERTS</p>
+      • Chrysanthemum Syrup:   Chrysanthemum syrups are drizzled over panna cottas, cheese cakes and ice creams<br>
+      •Candied Petals: Fresh petals are crystallised and candied and are garnished<br>     
     `
   };
 

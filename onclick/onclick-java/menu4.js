@@ -4,22 +4,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const menuDetails = {
     main: `
-      <h1 class="menu-name">MIGUEL FUENTES</h1>
-      <p class="menu-description"><em>Chef Miguel Manuel Fuentes</em> is an acclaimed Michelin-starred Spanish chef celebrated for his bold fusion of traditional Iberian flavors and cutting-edge modernist cuisine...<br><br>
-      • Michelin Star recipient for Alma de Mar, Barcelona<br>
-      • National Gastronomy Award of Spain (2015)<br>
-      • Named among Spain’s Top 10 Young Chefs to Watch by GastroEspaña Magazine<br>
-      • Featured speaker at premier culinary events including:<br>
-      &nbsp;&nbsp;&nbsp;– Madrid Fusión<br>
-      &nbsp;&nbsp;&nbsp;– San Sebastián Gastronomika</p>
+      <h1 class="menu-name">MAIN</h1>
+      <p class="menu-description"><em>How we encoperate Taraxacum Officinale in our MAINS</em><br><br>
+      • Salads: Young lleaves are tossed in spring salads with citrus<br>
+      • Pasta: Dandelion leafs pestp are folded into handmade pasta & spread beneath seared scallops<br>
     `,
     drink: `
-      <h1 class="menu-name">MICHAEL FUENTES</h1>
-      <p class="menu-description">Michael Fuentes is known for his innovation in pastry and fine desserts with foraged botanicals... (Add real content here)</p>
+      <h1 class="menu-name">BEVARAGE</h1>
+      <p class="menu-description"> How we encoperate Taraxacum Officinale in our BEVERAGES</p>
+      • Champagne: Infused with fresh petals for meadow inspired drink<br>
+      • Cocktails & Mocktails: Roasted dandelions are used as root in old fasioned style cocktails for an earthy twist <br>
     `,
     desert: `
-      <h1 class="menu-name">LUCA MORETTI</h1>
-      <p class="menu-description">Luca Moretti brings refined northern Italian floral techniques into a modern culinary dialogue... (Add real content here)</p>
+      <h1 class="menu-name">DESSERT</h1>
+      <p class="menu-description"> How we encoperate Taraxacum Officinale in our DESSERTS</p>
+      •Shortbread: Shotbread with dandelion flower syrups for floral sweetness<br>
+      •Dandelion Ice cream: Dandelion petal ice creams are often paired with lemon zest<br>     
     `
   };
 

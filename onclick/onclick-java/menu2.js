@@ -4,22 +4,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const menuDetails = {
     main: `
-      <h1 class="menu-name">MIGUEL FUENTES</h1>
-      <p class="menu-description"><em>Chef Miguel Manuel Fuentes</em> is an acclaimed Michelin-starred Spanish chef celebrated for his bold fusion of traditional Iberian flavors and cutting-edge modernist cuisine...<br><br>
-      • Michelin Star recipient for Alma de Mar, Barcelona<br>
-      • National Gastronomy Award of Spain (2015)<br>
-      • Named among Spain’s Top 10 Young Chefs to Watch by GastroEspaña Magazine<br>
-      • Featured speaker at premier culinary events including:<br>
-      &nbsp;&nbsp;&nbsp;– Madrid Fusión<br>
-      &nbsp;&nbsp;&nbsp;– San Sebastián Gastronomika</p>
+      <h1 class="menu-name">MAIN</h1>
+      <p class="menu-description"><em>How we encoperate Dahlia Pinnata in our MAINS</em><br><br>
+      • Salads: Fresh dahlia petals are used over green salads to give the salad a peppery note and colour.<br>
+      • Tubers:  Dahlia tubers are roasted and sauteed or used like Jerusakem Artichokes  <br>
+      • Oils: Petals are infused into oils for dressing and drizzles to add nutty and peppery flavour.<br>
     `,
     drink: `
-      <h1 class="menu-name">MICHAEL FUENTES</h1>
-      <p class="menu-description">Michael Fuentes is known for his innovation in pastry and fine desserts with foraged botanicals... (Add real content here)</p>
+      <h1 class="menu-name">BEVARAGE</h1>
+      <p class="menu-description"> How we encoperate Dahlia Pinnata  in our BEVERAGES</p>
+      • Floral Water: Classic, Non-Alcoholic option. Steeped into hot water for a light refreshing floral tea, can be served hot or colld<br>
+      • Cocktails & Mocktails: Infused in strong drinks like Gin based cocktails for it's peppery and delicate aroma. <br>
     `,
     desert: `
-      <h1 class="menu-name">LUCA MORETTI</h1>
-      <p class="menu-description">Luca Moretti brings refined northern Italian floral techniques into a modern culinary dialogue... (Add real content here)</p>
+      <h1 class="menu-name">DESSERT</h1>
+       <p class="menu-description"> How we encoperate Dahlia Pinnata in our DESSERTS</p>
+      • Petal Sugar: Petals are dried and grounded into sugar that is then added as toppings and sweetener for shortbreads and macarons<br>
+      • Dahlia Creams: Used in panna cotta, mousses and custards.<br>
+      •Candied Petals: Fresh petals are crystallised and candied and are garnished<br>     
+     
     `
   };
 
